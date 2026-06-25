@@ -94,65 +94,65 @@
   <script>
     const countries = [
       {name:'Australia',flag:'🇦🇺',region:'oceania',settle:'T+2',venues:[
-        ['ASX','Equities · ETFs · Listed options','https://www.asx.com.au/markets','CHESS replacement and T+1 readiness remain the core market-structure watch.','https://www.asx.com.au/about/market-transformation'],
-        ['ASX 24','Index · Rates · Commodity futures','https://www.asx.com.au/markets/trade-our-derivatives-market','Contract, margin and expiry notices are tracked through the derivatives market hub.','https://www.asx.com.au/markets/trade-our-derivatives-market'],
-        ['Cboe Australia','Equities · ETFs · Warrants','https://www.cboe.com/au/equities/','ETF listings and trading notices remain the main product focus.','https://www.cboe.com/au/equities/notices/']]},
+        ['ASX','Equities · ETFs · Listed options','https://www.asx.com.au/markets','CHESS replacement and T+1 readiness remain the core market-structure watch.','https://www.asx.com.au/about/market-transformation','equities'],
+        ['ASX 24','Index · Rates · Commodity futures','https://www.asx.com.au/markets/trade-our-derivatives-market','Contract, margin and expiry notices are tracked through the derivatives market hub.','https://www.asx.com.au/markets/trade-our-derivatives-market','derivatives'],
+        ['Cboe Australia','Equities · ETFs · Warrants','https://www.cboe.com/au/equities/','ETF listings and trading notices remain the main product focus.','https://www.cboe.com/au/equities/notices/','equities']]},
       {name:'China Mainland',flag:'🇨🇳',region:'north',settle:'T+1',venues:[
-        ['SSE','Main Board · STAR Market · Bonds','https://www.sse.com.cn/','STAR Market reform, Connect eligibility and trading-rule notices are tracked.','https://www.sse.com.cn/disclosure/notice/'],
-        ['SZSE','Main Board · ChiNext · Bonds','https://www.szse.cn/','ChiNext, ETF and Stock Connect product changes are the key watch.','https://www.szse.cn/disclosure/notice/general/'],
-        ['BSE','Innovative SMEs','https://www.bse.cn/','Market-making, listing and qualified-investor rule updates are tracked.','https://www.bse.cn/'],
-        ['CFFEX','Equity index · Treasury · FX futures','http://www.cffex.com.cn/en_new/','Position limits, margin and contract-rule circulars are the main risk updates.','http://www.cffex.com.cn/en_new/Notices/'],
-        ['SHFE','Metals · Energy · Chemicals futures/options','https://www.shfe.com.cn/eng/','Nickel futures and options opened to overseas traders in April 2026.','https://www.ine.cn/eng/circularnews/news/202604/t20260424_831491.html'],
-        ['INE','Crude oil · TSR20 · LSFO · Bonded copper','https://www.ine.cn/eng/','TSR20 and bonded copper options were listed; June position notices are tracked.','https://www.ine.cn/eng/circularnews/news/202604/t20260424_831491.html'],
-        ['DCE','Iron ore · Soy complex · Chemicals · Livestock','http://www.dce.com.cn/DCE/','Delivery, margin, fee and position-limit circulars are now tracked separately.','http://www.dce.com.cn/DCE/'],
-        ['CZCE','Agriculture · Energy · Chemicals','https://english.czce.com.cn/','Margin, price-limit, night-session and hedging notices are tracked.','https://english.czce.com.cn/'],
-        ['GFEX','Green metals · Lithium · Polysilicon · Platinum','https://www.gfex.com.cn/en/','Platinum and palladium entered first delivery month; delivery readiness is in focus.','https://www.gfex.com.cn/gfex/mtjj/202604/326a8c17145f4aafae3d66395a887155.shtml'],
-        ['SGE','Gold · Silver · Precious metals','https://en.sge.com.cn/','Trading calendar, benchmark and precious-metals delivery notices are tracked.','https://en.sge.com.cn/eng_news_Announcement']]},
+        ['SSE','Main Board · STAR Market · Bonds','https://www.sse.com.cn/','STAR Market reform, Connect eligibility and trading-rule notices are tracked.','https://www.sse.com.cn/disclosure/notice/','equities'],
+        ['SZSE','Main Board · ChiNext · Bonds','https://www.szse.cn/','ChiNext, ETF and Stock Connect product changes are the key watch.','https://www.szse.cn/disclosure/notice/general/','equities'],
+        ['BSE','Innovative SMEs','https://www.bse.cn/','Market-making, listing and qualified-investor rule updates are tracked.','https://www.bse.cn/','equities'],
+        ['CFFEX','Equity index · Treasury · FX futures','http://www.cffex.com.cn/en_new/','Position limits, margin and contract-rule circulars are the main risk updates.','http://www.cffex.com.cn/en_new/Notices/','derivatives'],
+        ['SHFE','Metals · Energy · Chemicals futures/options','https://www.shfe.com.cn/eng/','Nickel futures and options opened to overseas traders in April 2026.','https://www.ine.cn/eng/circularnews/news/202604/t20260424_831491.html','derivatives'],
+        ['INE','Crude oil · TSR20 · LSFO · Bonded copper','https://www.ine.cn/eng/','TSR20 and bonded copper options were listed; June position notices are tracked.','https://www.ine.cn/eng/circularnews/news/202604/t20260424_831491.html','derivatives'],
+        ['DCE','Iron ore · Soy complex · Chemicals · Livestock','http://www.dce.com.cn/DCE/','Delivery, margin, fee and position-limit circulars are now tracked separately.','http://www.dce.com.cn/DCE/','derivatives'],
+        ['CZCE','Agriculture · Energy · Chemicals','https://english.czce.com.cn/','Margin, price-limit, night-session and hedging notices are tracked.','https://english.czce.com.cn/','derivatives'],
+        ['GFEX','Green metals · Lithium · Polysilicon · Platinum','https://www.gfex.com.cn/en/','Platinum and palladium entered first delivery month; delivery readiness is in focus.','https://www.gfex.com.cn/gfex/mtjj/202604/326a8c17145f4aafae3d66395a887155.shtml','derivatives'],
+        ['SGE','Gold · Silver · Precious metals','https://en.sge.com.cn/','Trading calendar, benchmark and precious-metals delivery notices are tracked.','https://en.sge.com.cn/eng_news_Announcement','commodity']]},
       {name:'Hong Kong',flag:'🇭🇰',region:'north',settle:'T+2',venues:[
-        ['HKEX / SEHK','Equities · ETFs · Structured products','https://www.hkex.com.hk/Products/Securities?sc_lang=en','Stock Connect, ETF and listing-rule updates remain the primary watch.','https://www.hkex.com.hk/News/Market-Communications/Market-Turnover?sc_lang=en'],
-        ['HKEX / HKFE','Index · Equity · FX derivatives','https://www.hkex.com.hk/Products/Listed-Derivatives?sc_lang=en','Second batch of new weekly stock option contracts begins 22 June 2026.','https://www.hkex.com.hk/news/news-release/2026/260427news?sc_lang=zh-hk'],
+        ['HKEX / SEHK','Equities · ETFs · Structured products','https://www.hkex.com.hk/Products/Securities?sc_lang=en','Stock Connect, ETF and listing-rule updates remain the primary watch.','https://www.hkex.com.hk/News/Market-Communications/Market-Turnover?sc_lang=en','equities'],
+        ['HKEX / HKFE','Index · Equity · FX derivatives','https://www.hkex.com.hk/Products/Listed-Derivatives?sc_lang=en','Second batch of new weekly stock option contracts begins 22 June 2026.','https://www.hkex.com.hk/news/news-release/2026/260427news?sc_lang=zh-hk','derivatives'],
         ['OSL Digital Securities','Regulated digital-asset trading platform','https://osl.com/','Licensed digital-asset venue; monitored for custody, token admission and platform-rule updates.','https://osl.com/','alternative']]},
       {name:'India',flag:'🇮🇳',region:'south',settle:'T+1',venues:[
-        ['NSE','Equities · ETFs · Index/equity derivatives','https://www.nseindia.com/products-services','T+1 settlement, derivatives circulars and index rebalances are tracked.','https://www.nseindia.com/resources/exchange-communication-circulars'],
-        ['BSE India','Equities · SME · Derivatives','https://www.bseindia.com/','Listing, surveillance and contract circulars are tracked from BSE notices.','https://www.bseindia.com/markets/MarketInfo/NoticesCirculars.aspx'],
-        ['MCX','Metals · Energy · Agriculture derivatives','https://www.mcxindia.com/','Contract launches, delivery and margin circulars are the main commodity watch.','https://www.mcxindia.com/circulars']]},
+        ['NSE','Equities · ETFs · Index/equity derivatives','https://www.nseindia.com/products-services','T+1 settlement, derivatives circulars and index rebalances are tracked.','https://www.nseindia.com/resources/exchange-communication-circulars','equities'],
+        ['BSE India','Equities · SME · Derivatives','https://www.bseindia.com/','Listing, surveillance and contract circulars are tracked from BSE notices.','https://www.bseindia.com/markets/MarketInfo/NoticesCirculars.aspx','equities'],
+        ['MCX','Metals · Energy · Agriculture derivatives','https://www.mcxindia.com/','Contract launches, delivery and margin circulars are the main commodity watch.','https://www.mcxindia.com/circulars','derivatives']]},
       {name:'Indonesia',flag:'🇮🇩',region:'south',settle:'T+2',venues:[
-        ['IDX','Main · Development · New Economy','https://www.idx.co.id/en','Listing, trading-calendar and market-operation announcements are tracked.','https://www.idx.co.id/en/news/announcement/'],
-        ['JFX','Commodity and FX futures','https://www.jfx.co.id/','Contract specifications and clearing notices are tracked through JFX.','https://www.jfx.co.id/'],
-        ['ICDX','Commodity and digital-asset derivatives','https://www.icdx.co.id/','New commodity contracts and trading notices are the main product watch.','https://www.icdx.co.id/news']]},
+        ['IDX','Main · Development · New Economy','https://www.idx.co.id/en','Listing, trading-calendar and market-operation announcements are tracked.','https://www.idx.co.id/en/news/announcement/','equities'],
+        ['JFX','Commodity and FX futures','https://www.jfx.co.id/','Contract specifications and clearing notices are tracked through JFX.','https://www.jfx.co.id/','derivatives'],
+        ['ICDX','Commodity and digital-asset derivatives','https://www.icdx.co.id/','New commodity contracts and trading notices are the main product watch.','https://www.icdx.co.id/news','derivatives']]},
       {name:'Japan',flag:'🇯🇵',region:'north',settle:'T+2',venues:[
-        ['TSE / JPX','Prime · Standard · Growth','https://www.jpx.co.jp/english/equities/','JPX Start-Up Acceleration 100 began real-time distribution in March.','https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20260213-01.html'],
-        ['OSE / JPX','Equity · Index · Rates derivatives','https://www.jpx.co.jp/english/derivatives/','Contract launches, position limits and holiday trading updates are tracked.','https://www.jpx.co.jp/english/derivatives/rules/'],
-        ['TOCOM','Energy · Precious metals · Rubber derivatives','https://www.jpx.co.jp/english/derivatives/products/commodities/','Commodity contract and delivery-rule updates are tracked within JPX derivatives.','https://www.jpx.co.jp/english/derivatives/'],
+        ['TSE / JPX','Prime · Standard · Growth','https://www.jpx.co.jp/english/equities/','JPX Start-Up Acceleration 100 began real-time distribution in March.','https://www.jpx.co.jp/english/corporate/news/news-releases/0060/20260213-01.html','equities'],
+        ['OSE / JPX','Equity · Index · Rates derivatives','https://www.jpx.co.jp/english/derivatives/','Contract launches, position limits and holiday trading updates are tracked.','https://www.jpx.co.jp/english/derivatives/rules/','derivatives'],
+        ['TOCOM','Energy · Precious metals · Rubber derivatives','https://www.jpx.co.jp/english/derivatives/products/commodities/','Commodity contract and delivery-rule updates are tracked within JPX derivatives.','https://www.jpx.co.jp/english/derivatives/','derivatives'],
         ['Tokyo Pro Market','Professional investor equity market','https://www.jpx.co.jp/english/equities/products/tpm/','Professional-investor listings and sponsor framework updates are tracked separately from Prime/Standard/Growth.','https://www.jpx.co.jp/english/equities/products/tpm/','equities'],
         ['Cboe Japan','Alternative equities trading venue','https://www.cboe.com/jp/equities/','Alternative trading venue; monitored for matching, trading-hours and participant notices.','https://www.cboe.com/jp/equities/','alternative'],
         ['Japannext PTS','Proprietary trading system','https://www.japannext.co.jp/en/','PTS market structure, trading hours and eligible security updates are tracked.','https://www.japannext.co.jp/en/news/','alternative'],
         ['ODX / START','Digital securities market','https://www.odx.co.jp/en/','Security-token market updates and token listing changes are tracked as digital-market infrastructure.','https://www.odx.co.jp/en/news/','alternative']]},
       {name:'South Korea',flag:'🇰🇷',region:'north',settle:'T+2',venues:[
-        ['KRX','KOSPI · KOSDAQ · KONEX','https://global.krx.co.kr/','Enhanced short-sale controls and NSDS monitoring remain the major rule focus.','https://fsc.go.kr/eng/pr010101/84026'],
-        ['KRX Derivatives','Index · Equity · Rates · Commodity','https://global.krx.co.kr/contents/GLB/02/0201/0201000000/GLB0201000000.jsp','Product, margin and night-session notices are tracked.','https://global.krx.co.kr/'],
+        ['KRX','KOSPI · KOSDAQ · KONEX','https://global.krx.co.kr/','Enhanced short-sale controls and NSDS monitoring remain the major rule focus.','https://fsc.go.kr/eng/pr010101/84026','equities'],
+        ['KRX Derivatives','Index · Equity · Rates · Commodity','https://global.krx.co.kr/contents/GLB/02/0201/0201000000/GLB0201000000.jsp','Product, margin and night-session notices are tracked.','https://global.krx.co.kr/','derivatives'],
         ['NXT','Alternative trading system · Equities','https://www.nextrade.co.kr/','Venue expansion, operating hours and eligible-security updates are tracked.','https://www.nextrade.co.kr/']]},
       {name:'Malaysia',flag:'🇲🇾',region:'south',settle:'T+2',venues:[
-        ['Bursa Securities','Main · ACE · LEAP','https://www.bursamalaysia.com/trade/market/securities_market','Listing, trading and market-operations circulars are tracked.','https://www.bursamalaysia.com/about_bursa/media_centre'],
-        ['Bursa Derivatives','Equity · Palm oil · Gold derivatives','https://www.bursamalaysia.com/trade/our_products_services/derivatives','FCPO product and margin updates remain the primary derivatives watch.','https://www.bursamalaysia.com/trade/our_products_services/derivatives']]},
+        ['Bursa Securities','Main · ACE · LEAP','https://www.bursamalaysia.com/trade/market/securities_market','Listing, trading and market-operations circulars are tracked.','https://www.bursamalaysia.com/about_bursa/media_centre','equities'],
+        ['Bursa Derivatives','Equity · Palm oil · Gold derivatives','https://www.bursamalaysia.com/trade/our_products_services/derivatives','FCPO product and margin updates remain the primary derivatives watch.','https://www.bursamalaysia.com/trade/our_products_services/derivatives','derivatives']]},
       {name:'New Zealand',flag:'🇳🇿',region:'oceania',settle:'T+2',venues:[
-        ['NZX','Main Board · Debt · Dairy derivatives','https://www.nzx.com/markets','Listing-rule, trading and dairy derivatives notices are tracked.','https://www.nzx.com/announcements']]},
+        ['NZX','Main Board · Debt · Dairy derivatives','https://www.nzx.com/markets','Listing-rule, trading and dairy derivatives notices are tracked.','https://www.nzx.com/announcements','equities']]},
       {name:'Philippines',flag:'🇵🇭',region:'south',settle:'T+2',venues:[
         ['PSE','Main Board · SME Board','https://www.pse.com.ph/','Listing, short-selling implementation and market-operation notices are tracked.','https://www.pse.com.ph/exchange-notices/']]},
       {name:'Singapore',flag:'🇸🇬',region:'south',settle:'T+2',venues:[
-        ['SGX Securities','Equities · REITs · ETFs · Bonds','https://www.sgx.com/securities','Listing, settlement and securities-market circulars are tracked.','https://www.sgx.com/regulation/circulars'],
-        ['SGX Derivatives','Equity · FX · Commodity derivatives','https://www.sgx.com/derivatives','New Asia index, FX and commodity contracts are the main product watch.','https://www.sgx.com/media-centre']]},
+        ['SGX Securities','Equities · REITs · ETFs · Bonds','https://www.sgx.com/securities','Listing, settlement and securities-market circulars are tracked.','https://www.sgx.com/regulation/circulars','equities'],
+        ['SGX Derivatives','Equity · FX · Commodity derivatives','https://www.sgx.com/derivatives','New Asia index, FX and commodity contracts are the main product watch.','https://www.sgx.com/media-centre','derivatives']]},
       {name:'Taiwan',flag:'🇹🇼',region:'north',settle:'T+2',venues:[
-        ['TWSE','Listed equities · ETFs','https://www.twse.com.tw/en/','ETF, trading-system and market-rule announcements are tracked.','https://www.twse.com.tw/en/about/news/news.html'],
-        ['TPEx','Emerging · OTC securities','https://www.tpex.org.tw/en-us/','Emerging-market, bond and listing updates are tracked.','https://www.tpex.org.tw/en-us/mainboard/news/'],
-        ['TAIFEX','Index · Equity · FX derivatives','https://www.taifex.com.tw/enl/eng','Contract, position-limit and after-hours trading notices are tracked.','https://www.taifex.com.tw/enl/eng/announcement/announcement']]},
+        ['TWSE','Listed equities · ETFs','https://www.twse.com.tw/en/','ETF, trading-system and market-rule announcements are tracked.','https://www.twse.com.tw/en/about/news/news.html','equities'],
+        ['TPEx','Emerging · OTC securities','https://www.tpex.org.tw/en-us/','Emerging-market, bond and listing updates are tracked.','https://www.tpex.org.tw/en-us/mainboard/news/','equities'],
+        ['TAIFEX','Index · Equity · FX derivatives','https://www.taifex.com.tw/enl/eng','Contract, position-limit and after-hours trading notices are tracked.','https://www.taifex.com.tw/enl/eng/announcement/announcement','derivatives']]},
       {name:'Thailand',flag:'🇹🇭',region:'south',settle:'T+2',venues:[
-        ['SET / mai','Listed equities · Growth market','https://www.set.or.th/en/home','Trading, listing and market-structure news are tracked.','https://www.set.or.th/en/about/mediacenter/news-release'],
-        ['TFEX','Equity · Metal · FX derivatives','https://www.tfex.co.th/en','Contract specifications, margin and trading notices are tracked.','https://www.tfex.co.th/en/market-data/news-and-announcement']]},
+        ['SET / mai','Listed equities · Growth market','https://www.set.or.th/en/home','Trading, listing and market-structure news are tracked.','https://www.set.or.th/en/about/mediacenter/news-release','equities'],
+        ['TFEX','Equity · Metal · FX derivatives','https://www.tfex.co.th/en','Contract specifications, margin and trading notices are tracked.','https://www.tfex.co.th/en/market-data/news-and-announcement','derivatives']]},
       {name:'Vietnam',flag:'🇻🇳',region:'south',settle:'T+2',venues:[
-        ['HOSE','Large-cap equities · ETFs','https://www.hsx.vn/','Trading-system, listing and market-operation notices are tracked.','https://www.hsx.vn/'],
-        ['HNX','Equities · Bonds · Derivatives','https://www.hnx.vn/en-gb/','Government bond and derivatives market updates are tracked.','https://www.hnx.vn/en-gb/'],
-        ['UPCoM','Unlisted public companies','https://www.hnx.vn/en-gb/upcom.html','Registration, trading and issuer-status updates are tracked.','https://www.hnx.vn/en-gb/upcom.html']]}
+        ['HOSE','Large-cap equities · ETFs','https://www.hsx.vn/','Trading-system, listing and market-operation notices are tracked.','https://www.hsx.vn/','equities'],
+        ['HNX','Equities · Bonds · Derivatives','https://www.hnx.vn/en-gb/','Government bond and derivatives market updates are tracked.','https://www.hnx.vn/en-gb/','equities'],
+        ['UPCoM','Unlisted public companies','https://www.hnx.vn/en-gb/upcom.html','Registration, trading and issuer-status updates are tracked.','https://www.hnx.vn/en-gb/upcom.html','equities']]}
     ];
 
     const highlights = [

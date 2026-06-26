@@ -11,7 +11,7 @@ Each update should check the four global regions by default:
 3. Europe
 4. Middle East & Africa
 
-Do not let a region appear empty unless a reasonable source check found no material update. If there is no high-quality new item, prefer a clearly labelled “ongoing watch” item over leaving the region blank.
+Do not let a region appear empty unless a reasonable source check found no material update. If there is no high-quality new item, record the source check in the update summary or coverage notes, but do not create a fake market-update card.
 
 ## Required market streams
 
@@ -43,6 +43,20 @@ Include an item only when it has at least one of the following:
 - A likely impact on trading, operations, risk, clearing, settlement, compliance, master data, market data or client communication
 
 Avoid generic marketing, broad strategy pieces, or unnamed product pipelines unless they materially affect market structure.
+
+## Exclusion rules for market-update cards
+
+Do not include internal coverage notes as market updates. The “Market Updates” page should only show real market events, not ExchangePulse housekeeping.
+
+Exclude items whose main message is only:
+
+- A market, exchange, CSD or regulator has been “added to monitoring”
+- A source has been “included in coverage”
+- A venue is being “continuously tracked” or “under watch”
+- ExchangePulse will “monitor” a market in future
+- A country or region has no specific new announcement
+
+These notes belong in the market directory, coverage status, update summary or this rules file. They should not appear as user-facing exchange-dynamic cards unless tied to a concrete external event such as a rule change, product launch, settlement change, system notice, market-data release, enforcement action, trading-volume record, index change, listing or regulator/CSD announcement.
 
 ## Time windows
 
